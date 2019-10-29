@@ -81,6 +81,12 @@ class Student
 
     DB[:conn].execute(sql)
   end
+  
+  def self.create(name:, grade:)
+    song = Student.new(name, album)
+    song.save
+    song
+  end
 
   def self.drop_table
     sql = "DROP TABLE IF EXISTS students"
