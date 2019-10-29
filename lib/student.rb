@@ -83,9 +83,9 @@ class Student
   end
   
   def self.create(name:, grade:)
-    song = Student.new(name, grade)
-    song.save
-    song
+    student = Student.new(name, grade)
+    student.save
+    student
   end
 
   def self.drop_table
